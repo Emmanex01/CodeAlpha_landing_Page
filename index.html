@@ -8,18 +8,39 @@
     <title>Landing Page</title>
 </head>
 <body>
+
+    
     <div class="container">
+        <div class="side-bar">
+            <div class="top">
+                <h2>Emma_tochi</h2>
+                <span class="close">X</span>
+            </div>
+            <ul>
+                <li> <a href="#container2">Course Schedule</a></li>
+                <li><a href="#c3">Instructor</a></li>
+                <li><a href="#S-container">Reviews</a></li>
+                <li><a href="#c4">FAQs</a></li>
+                <li> <a href="#user">Join</a></li>
+            </ul>
+        </div>
+
         <nav>
             <div class="center">
                 <div>
                     <h2>Emma_tochi</h2>
                 </div>
                 <ul>
-                    <li> <a href="#">Course Schedule</a></li>
-                    <li><a href="#">Instructor</a></li>
-                    <li><a href="#">Reviews</a></li>
-                    <li><a href="#">FAQs</a></li>
+                    <li> <a href="#container2">Course Schedule</a></li>
+                    <li><a href="c3">Instructor</a></li>
+                    <li><a href="#S-container">Reviews</a></li>
+                    <li><a href="#c4">FAQs</a></li>
                 </ul>
+                <div class="hamburger">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
             </div>
             
         </nav>
@@ -30,7 +51,7 @@
                     <h3>Majority of people waste money due lack of understanding of the role of Microorganisms in our lives. With my online classes, i will guide you through an enlightening journey, shedding light on the remarkable potentials of microorganisms to revolutionalize our lives, both in terms of our well beings and economic prosperity</h3>
 
                 </div>
-                <div class="form">
+                <div id="user" class="form">
                     <form action="">
                         <h3>Schedule a Free Consultation</h3>
                         <div class="name">
@@ -102,9 +123,9 @@
                 <span class="sign">+</span>
             </div>
         </div>
-        <button class="enroll-button">ENROLL NOW</button>
+        <button class="enroll-button"><a href="#user">ENROLL NOW</a> </button>
     </div>
-    <div class="container3">
+    <div id="c3" class="container3">
         <h2>Meet Your Instructor</h2>
         <div class="center">
             <div class="autors-image">
@@ -120,7 +141,7 @@
 
     <h3 class="slide-title">What Our Students Say</h3>
 
-    <div class="slide-container">
+    <div id="S-container" class="slide-container">
         
         <button class="slide-button-prev">&#60</button>
         <div class="slide-track">
@@ -150,7 +171,10 @@
         <button class="slide-button-next">></button>
     </div>
 
-    <div class="container4">
+    <h3 class="slide-title">Frequently Asked Questions</h3>
+
+    <div id="c4" class="container4">
+        
         <div class="faq">
             <h4 class="faq-question">what is the duration of each classes per day?</h4>
             <button class="clickbutton" data-all="click1"> <span class="plus">+</span></button>

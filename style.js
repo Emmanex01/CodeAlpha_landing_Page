@@ -6,6 +6,9 @@ const slideButtonPrev = document.getElementsByClassName("slide-button-prev");
 const slideButtonNext = document.getElementsByClassName("slide-button-next");
 const slideContent = document.querySelectorAll(".slide-content");
 const change2 = document.querySelectorAll(".clickbutton");
+const hamburger = document.querySelector(".hamburger");
+const exitButton = document.querySelector(".close");
+const sideBar = document.querySelector(".side-bar");
 
 console.log(change2);
 
@@ -52,12 +55,22 @@ change2.forEach(function(event) {
         // console.log(buttonSign);
 
         if (answerClicked && buttonSign) {
-            answerClicked.style.display = answerClicked.style.display === "none" ? "block" : "none";
+            answerClicked.style.display = answerClicked.style.display === "none" || !answerClicked.style.display ? "block" : "none";
  
-            buttonSign.textContent = buttonSign.textContent === '+' ? '-' : '+';
+            buttonSign.textContent = buttonSign.textContent === '+' || !buttonSign.textContent ? '-' : '+';
 
             console.log(buttonSign.innerHTML)
         }
     })
+})
+
+exitButton.addEventListener('click', () => {
+    sideBar.style.display = "none";
+    hamburger.style.display = "block";
+})
+
+hamburger.addEventListener('click', () => {
+    sideBar.style.display = "flex";
+    hamburger.style.display = "none";
 })
 
