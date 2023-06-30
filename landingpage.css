@@ -114,6 +114,24 @@ body{
     margin-bottom: 1rem;
     height: 30px;
 }
+.container .section1 form button{
+    margin: 1rem 0;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border-style: none;
+}
+
+.container .section1 form button:hover{
+    background-color: blue;
+}
+
+.container .section1 form button:active{
+    background-color: white;
+    color: black;
+    transition: all 0.5s ease;
+}
 
 #container2{
     display: flex;
@@ -299,6 +317,12 @@ body .slide-title{
 
 .answer{
     display: none;
+}
+
+.last{
+    height: 3rem;
+    background-color: darkgrey;
+    margin-top: 2rem;
 }
 
 @media (max-width : 750px) {
