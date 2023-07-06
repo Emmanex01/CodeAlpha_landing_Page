@@ -225,7 +225,7 @@ body{
     height: 200px; */
     max-width: 100%;
     max-height: 100%;
-    border-radius: 70%;
+    border-radius: 50%;
     object-fit: cover;
     
 }
@@ -302,7 +302,7 @@ body .slide-title{
 }
 
 .container4{
-    padding: 2rem;
+    padding: 2rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -311,25 +311,28 @@ body .slide-title{
 
 .inner{
     display: flex;
-    align-items: center;
     flex-direction: column;
-    width: 80%;
+    width: 40%;
 }
 
 .faq{
     display: flex;
-    gap: 2rem;
-    
+    justify-content: space-between;
+    margin-bottom: 1rem;
 }
 
 .faq button{
-    width: 50px;
+    width: 10px;
     border: none;
     cursor: pointer;
 }
 
 .answer{
     display: none;
+}
+
+.inner2{
+    margin-bottom: 2rem;
 }
 
 .last{
@@ -417,12 +420,25 @@ body .slide-title{
         align-items: center;
     }
 
-    .autors-image{
-        width: 30;
+    .container3 img{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
     }
+
+    
 
     .container3 .autors-description{
         width: 100%;
         padding: 2rem;
+    }
+
+    #container2 .table{
+        width: 100%;
+    }
+
+    .inner{
+        width: 80%;
     }
 }
